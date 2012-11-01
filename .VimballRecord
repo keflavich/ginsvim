@@ -1,0 +1,2 @@
+Align.vba: call delete('/Users/adam/.vim/plugin/AlignPlugin.vim')|call delete('/Users/adam/.vim/plugin/AlignMapsPlugin.vim')|call delete('/Users/adam/.vim/plugin/cecutil.vim')|call delete('/Users/adam/.vim/doc/Align.txt')|call delete('/Users/adam/.vim/autoload/Align.vim')|call delete('/Users/adam/.vim/autoload/AlignMaps.vim')
+csv-0.22.vmb: call delete('/Users/adam/.vim/ftplugin/csv.vim')|call delete('/Users/adam/.vim/doc/ft-csv.txt')|call delete('/Users/adam/.vim/syntax/csv.vim')|call delete('/Users/adam/.vim/ftdetect/csv.vim')|call delete('/Users/adam/.vim/plugin/csv.vim')

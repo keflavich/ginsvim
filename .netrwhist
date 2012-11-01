@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Volumes/disk5/Users/adam/repos/agpy/agpy'
+let g:netrw_dirhist_2='/Volumes/disk5/Users/adam/work/h2co/arecibo_codes'
+let g:netrw_dirhist_3='/Volumes/disk5/Users/adam/observations/arecibo/20120911'
+let g:netrw_dirhist_4='/Volumes/disk5/Users/adam/work/h2co/limabean'
+let g:netrw_dirhist_5='/Volumes/disk5/Users/adam/work/h2co/limabean/reduction_scripts'
+let g:netrw_dirhist_6='/Volumes/disk4/Dropbox/triplespec_observing_q2_2012'
+let g:netrw_dirhist_7='/Volumes/disk4/orion/orionA'
+let g:netrw_dirhist_8='/Volumes/disk3/adam_work/cygx'
+let g:netrw_dirhist_9='/Volumes/disk5/Users/adam/proposals'
