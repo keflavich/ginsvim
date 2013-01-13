@@ -1,4 +1,4 @@
-" metarw - a framework to read/write a fake:path
+" Vim syntax: metarw - for content browser of metarw
 " Version: 0.0.5
 " Copyright (C) 2008-2009 kana <http://whileimautomaton.net/>
 " License: MIT license  {{{
@@ -22,27 +22,45 @@
 "     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 " }}}
 
-if exists('g:loaded_metarw')
+if exists('b:current_syntax')
   finish
 endif
 
 
 
 
-augroup plugin-metarw
-  autocmd!
-  autocmd BufReadCmd ??*:{*,*/*}  call metarw#_event_handler('BufReadCmd')
-  autocmd BufWriteCmd ??*:{*,*/*}  call metarw#_event_handler('BufWriteCmd')
-  autocmd FileAppendCmd ??*:{*,*/*}  call metarw#_event_handler('FileAppendCmd')
-  autocmd FileReadCmd ??*:{*,*/*}  call metarw#_event_handler('FileReadCmd')
-  autocmd FileWriteCmd ??*:{*,*/*}  call metarw#_event_handler('FileWriteCmd')
-  autocmd SourceCmd ??*:{*,*/*}  call metarw#_event_handler('SourceCmd')
-augroup END
 
 
 
 
-let g:loaded_metarw = 1
+syntax clear
+
+syntax case match
+
+
+
+
+  " not to override metarwCurrentPath by metarwDirectoryIsh.
+syntax match metarwDirectoryIsh /.*\/$/
+
+syntax match metarwTitle /^\%1l.*$/
+syntax match metarwCurrentPath /^\%2l.*$/
+
+
+
+
+highlight default link metarwTitle Comment
+highlight default link metarwCurrentPath Title
+highlight default link metarwDirectoryIsh Directory
+
+
+
+
+
+
+
+
+let b:current_syntax = 'metarw'
 
 " __END__
 " vim: foldmethod=marker
