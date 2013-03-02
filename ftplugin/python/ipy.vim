@@ -566,7 +566,7 @@ au FocusGained *.*,vim-ipython :python if update_subchannel_msgs(): echo("vim-ip
 au BufEnter vim-ipython :python if update_subchannel_msgs(): echo("vim-ipython shell updated (on buffer enter)",'Operator')
 
 if g:ipy_perform_mappings != 0
-    map <silent> <F5> :python run_this_file()<CR>
+    " MY f5!!!!! map <silent> <F5> :python run_this_file()<CR>
     map <silent> <S-F5> :python run_this_line()<CR>
     map <silent> <F9> :python run_these_lines()<CR>
     map <silent> <leader>d :py get_doc_buffer()<CR>
