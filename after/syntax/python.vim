@@ -1,34 +1,22 @@
-if g:jedi#show_function_definition == 1 && has('conceal')
-  " conceal is normal for vim >= 7.3
+"=============================================
+"    Name: python.vim
+"    File: python.vim
+" Summary: highlight reStructuredText in python docstring.
+"  Author: Rykka G.F
+"  Update: 2012-09-25
+"=============================================
+let s:cpo_save = &cpo
+set cpo-=C
 
-  let e = g:jedi#function_definition_escape
-  let l1 = e.'jedi=[^'.e.']*'.e.'[^'.e.']*'.e.'jedi'.e
-  let l2 = e.'jedi=\?[^'.e.']*'.e
-  exe 'syn match jediIgnore "'.l2.'" contained conceal'
-  setlocal conceallevel=2
-  syn match jediFatSymbol "*" contained conceal
-  syn match jediFat "\*[^*]\+\*" contained contains=jediFatSymbol
-  syn match jediSpace "\v[ ]+( )@=" contained
-  exe 'syn match jediFunction "'.l1.'" keepend extend contains=jediIgnore,jediFat,jediSpace'
-
-  hi def link jediIgnore Ignore
-  hi def link jediFatSymbol Ignore
-  hi def link jediSpace Normal
-  hi jediFat term=bold,underline cterm=bold,underline gui=bold,underline ctermbg=0 guibg=#555555
-  hi jediFunction term=NONE cterm=NONE ctermfg=6 guifg=Black gui=NONE ctermbg=0 guibg=Grey
-
-  " override defaults (add jediFunction to contains)
-  syn match pythonComment "#.*$" contains=pythonTodo,@Spell,jediFunction
-  syn region pythonString
-      \ start=+[uU]\=\z(['"]\)+ end="\z1" skip="\\\\\|\\\z1"
-      \ contains=pythonEscape,@Spell,jediFunction
-  syn region pythonString
-      \ start=+[uU]\=\z('''\|"""\)+ end="\z1" keepend
-      \ contains=pythonEscape,pythonSpaceError,pythonDoctest,@Spell,jediFunction
-  syn region pythonRawString
-      \ start=+[uU]\=[rR]\z(['"]\)+ end="\z1" skip="\\\\\|\\\z1"
-      \ contains=@Spell,jediFunction
-  syn region pythonRawString
-      \ start=+[uU]\=[rR]\z('''\|"""\)+ end="\z1" keepend
-      \ contains=pythonSpaceError,pythonDoctest,@Spell,jediFunction
+if g:riv_python_rst_hl == 1 
+    unlet! b:current_syntax
+    syn include @python_rst <sfile>:p:h:h:h/syntax/rst.vim
+    syn include @python_rst <sfile>:p:h/rst.vim
+    syn region  pythonRstString matchgroup=pythonString
+        \ start=+[uU]\=\z('''\|"""\)+ end="\z1" keepend
+        \ contains=@python_rst
+    let b:current_syntax = "python"
 endif
+
+let &cpo = s:cpo_save
+unlet s:cpo_save

@@ -4,6 +4,11 @@
 :HistID	histwin.txt	/*:HistID*
 :Histwin	histwin.txt	/*:Histwin*
 :Read	metarw.txt	/*:Read*
+:RivInstruction	riv.txt	/*:RivInstruction*
+:RivIntro	riv.txt	/*:RivIntro*
+:RivPrimer	riv.txt	/*:RivPrimer*
+:RivQuickStart	riv.txt	/*:RivQuickStart*
+:RivSpecification	riv.txt	/*:RivSpecification*
 :Source	metarw.txt	/*:Source*
 :TagbarClose	tagbar.txt	/*:TagbarClose*
 :TagbarCurrentTag	tagbar.txt	/*:TagbarCurrentTag*
@@ -1150,6 +1155,7 @@ ragtag.txt	ragtag.txt	/*ragtag.txt*
 recommended-settings	latex-suite.txt	/*recommended-settings*
 remapping-latex-suite-keys	latex-suite.txt	/*remapping-latex-suite-keys*
 report-class	latexhelp.txt	/*report-class*
+riv.txt	riv.txt	/*riv.txt*
 roman	latexhelp.txt	/*roman*
 rqno	latexhelp.txt	/*rqno*
 section-mappings	latex-suite.txt	/*section-mappings*
