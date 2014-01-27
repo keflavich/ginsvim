@@ -1,10 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Applications/CASA.app/Contents/Resources/python'
-let g:netrw_dirhist_2='/Applications/CASA.app/Contents/Resources/python/asap'
-let g:netrw_dirhist_3='/Applications/CASA.app/Contents/Resources/python'
-let g:netrw_dirhist_4='/Applications/CASA.app/Contents/Resources'
-let g:netrw_dirhist_5='/Applications/CASA.app/Contents/Resources/python'
-let g:netrw_dirhist_6='/Applications/CASA.app/Contents/Resources/python/__casac__'
-let g:netrw_dirhist_7='/Applications/CASA.app/Contents/Resources/python'
-let g:netrw_dirhist_8='/Applications/CASA.app/Contents/Resources'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/adam/repos/pyspeckit/pyspeckit/spectrum'
