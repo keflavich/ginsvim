@@ -51,6 +51,6 @@ hi link SpecialComment Special
 hi link Debug		Special
 
 highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=235 gui=none guifg=bg guibg=Grey15
-highlight DiffDelete cterm=bold ctermfg=10 ctermbg=235 gui=none guifg=bg guibg=Grey15
-highlight DiffChange cterm=bold ctermfg=10 ctermbg=235 gui=none guifg=bg guibg=Grey15
-highlight DiffText   cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=NavyBlue
+highlight DiffDelete cterm=bold ctermfg=11 ctermbg=236 gui=none guifg=bg guibg=Grey19
+highlight DiffChange cterm=bold ctermfg=12 ctermbg=237 gui=none guifg=bg guibg=Grey23
+highlight DiffText   cterm=bold ctermfg=13 ctermbg=17  gui=none guifg=bg guibg=NavyBlue
