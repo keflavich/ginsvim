@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =1000
-let g:netrw_dirhist_cnt =146
+let g:netrw_dirhist_cnt =153
 let g:netrw_dirhist_1='/Users/adam/work/w51_singledish_maps/plot_scripts'
 let g:netrw_dirhist_2='/Users/adam/work/personal'
 let g:netrw_dirhist_3='/Users/adam/repos/pyspeckit/pyspeckit/spectrum/models'
@@ -146,3 +146,10 @@ let g:netrw_dirhist_143='/Users/adam/Downloads/radmc-3d/version_0.39/examples/ru
 let g:netrw_dirhist_144='/Users/adam/Downloads/radmc-3d/version_0.39/examples'
 let g:netrw_dirhist_145='/Users/adam/repos/montage-wrapper/montage_wrapper'
 let g:netrw_dirhist_146='/Users/adam/work/w51/paper_w51_evla/analysis'
+let g:netrw_dirhist_147='/mnt/d/repos/adamginsburg.github.com/teaching'
+let g:netrw_dirhist_148='/mnt/d/repos/adamginsburg.github.com/teaching/ast3722_spr2020'
+let g:netrw_dirhist_149='/home/adam/repos/astroquery'
+let g:netrw_dirhist_150='/home/adam/repos/astroquery/astroquery'
+let g:netrw_dirhist_151='/home/adam/repos/astroquery/astroquery/gaia'
+let g:netrw_dirhist_152='/home/adam/spam_paschenalpha'
+let g:netrw_dirhist_153='/home/adam/spam_paschenalpha/paper'
