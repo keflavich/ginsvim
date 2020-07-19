@@ -20,3 +20,7 @@ endif
 
 let &cpo = s:cpo_save
 unlet s:cpo_save
+
+" https://stackoverflow.com/questions/4617059/showing-trailing-spaces-in-vim
+highlight ExtraWhitespace ctermbg=DarkGray guibg=DarkGray
+match ExtraWhitespace /\s\+$/
